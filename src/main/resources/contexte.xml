@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<bean id="C1" class="tn.enig.dao.ClassA"></bean>
+<bean id="C2" class="tn.enig.dao.ClassB"></bean>
+<bean id="serv1" class="tn.enig.service.Service1">
+<property name="dao" ref="C2"></property>
+</bean>
+</beans>
